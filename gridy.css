@@ -1,0 +1,284 @@
+/*-----------------------------------
+  § RESET
+-----------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+html { 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    text-rendering: optimizelegibility;}
+
+input, button, select, textarea {
+	font: inherit;
+}
+
+img {
+	max-width: 100%;
+	border: 0; 
+	-ms-interpolation-mode: bicubic;
+}
+
+/*-----------------------------------
+	§ STANDARD
+-----------------------------------*/
+
+::selection {
+	background-color: rgb(255,252,127); /* define your color (custom: yellow)
+										------------------------------------- */
+	color: #333;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background-color: rgb(255,252,127); /* define your color (custom: yellow)
+										------------------------------------- */
+	color: #333;
+	text-shadow: none;
+}
+
+mark {
+	background-color: rgb(255,252,127); /* define your color (custom: yellow)
+										------------------------------------- */
+}
+
+img, video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 27px;
+	margin-bottom: 1.5em;
+}
+
+p img {
+	margin-bottom: 0px;
+	margin-bottom: 0em;
+}
+
+h1, h2, p, ul, ol, dl, dd, table, pre, form {
+	font-weight: 400;
+}
+
+p {
+	margin-bottom: 27px;
+	margin-bottom: 1.5em;
+}
+
+ul, ol {
+	padding-left: 1.5rem;
+}
+
+ul {
+	list-style: square;
+}
+
+li ul, li ol {
+	margin-bottom: 0;
+}
+
+a {
+	color: rgb(247,30,30);  /* define color of links 
+							-------------------------*/
+	text-decoration: none;	
+	-webkit-transition: all 400ms ease-in;
+	-o-transition: all 400ms ease-in;
+	-moz-transition: all 400ms ease-in;
+	transition: all 400ms ease-in;
+}
+
+	a:hover, a:focus {
+		text-decoration: none;
+		color: rgb(158,29,39); /* define color of links
+								------------------------ */
+	}
+
+hr {display: block; height: 1px; width: 3em; border: 0; background: rgb(51,51,51); margin: 0.5em auto 1em auto;}
+	
+h1 {
+	font-size: 45px;
+	font-size: 2.5em;
+	line-height: 1.1;
+}
+
+h2 {
+	font-size: 36px;
+	font-size: 2em;
+	line-height: 1.2;
+}
+
+h3 {
+	font-size: 28px;
+	font-size: 1.556em;
+	line-height: 1.3;
+}
+
+h4 {
+	font-size: 24px;
+	font-size: 1.333em;
+	line-height: 1.5;
+}
+
+h5 {
+	font-size: 20px;
+	font-size: 1.111em;
+	line-height: 1.5;
+}
+
+h6 {
+	font-size: 16px;
+	font-size: 0.889em;
+	line-height: 1.5;
+}
+
+p {
+	-webkit-hyphens: auto;
+	   -moz-hyphens: auto;
+	        hyphens: auto;
+}
+
+small {
+	font-size: .75rem;
+	line-height: 1.666;
+	color: rgba(0,0,0,.7);
+}
+
+strong {
+	font-weight: 700;
+}
+
+del {
+	opacity: .5;
+	text-decoration: line-through;
+}
+
+code {
+	color: rgb(102, 102, 102);
+	padding: 2px 4px 1px;
+	background-color: rgb(233,233,233);
+	border: 1px solid #e1e1e8;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+	border-radius: .25em;
+	font-size: .75em;
+	vertical-align: top;
+	font-family: Courier, monospace;
+}
+
+blockquote {
+	margin-bottom: 27px;
+	margin-bottom: 1.5em;
+	padding-left: 1em;
+	border-left: .2em solid rgb(251,184,41);
+	font-style: italic;
+}
+
+/*-----------------------------------
+	§ CLEARFIX
+-----------------------------------*/
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}	
+
+/*-----------------------------------
+	§ GLOBAL
+-----------------------------------*/
+body {
+	/* define your font, font color and font size
+	---------------------------------------------- */
+	font-size: 137.5%; 
+	line-height: 1.7;
+	background: rgb(255, 255, 255);
+	font-family: Georgia, serif; 
+	color: rgb(51, 51, 51);
+}
+
+/*-----------------------------------
+	§ GRIDY FRAMEWORK
+-----------------------------------*/
+
+/* do NOT delete this styles! */
+.container {
+	width: 90%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.row {
+  clear: both;
+}
+
+div[class*='unit-'] {
+	display: block;
+	float: none;
+    margin-right: 0;
+    margin-bottom: 5%;
+}
+
+.unit-full {
+	width: 100%;
+}
+
+
+			/* Breakpoint ( do NOT delete this styles! )
+			-------------- */
+			
+			@media screen and (min-width: 640px) {
+				div[class*='unit-'] {
+					float: left;
+				    margin-right: 5%;
+				    margin-bottom: 5%;
+				    background: #ccc;
+				}
+				
+				div[class*='unit-']:last-child {
+					margin-right: 0;
+				}
+				
+				.unit-half {
+					width: 47.5%;
+				}
+				
+				.unit-one-third {
+					width: 30%;
+				}
+				
+				.unit-one-fourth {
+					width: 21.25%;
+				}
+				
+				.unit-one-fifth {
+					width: 16%;
+				}
+				
+				.unit-one-sixth {
+					width: 12.5%;
+				}
+			}
+			
+			
+/* you CAN delete this, it's demo */
+
+.demo div[class*='unit-'] {
+    border: 0px;
+    height: 5em;
+    background: #ccc;
+    display: block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+	text-align: center;
+}
