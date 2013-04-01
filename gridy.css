@@ -282,3 +282,44 @@ div[class*='unit-'] {
     box-sizing:border-box;
 	text-align: center;
 }
+
+
+/*-----------------------------------
+	§ RESPONSIVE FONT SIZE
+-----------------------------------*/
+
+@media screen and (min-width: 0px) {
+	body {
+		font-size: 81.3%;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	body {
+		font-size: 87.5%;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	body {
+		font-size: 100%;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	body {
+		font-size: 112.5%;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	body {
+		font-size: 125%;
+	}
+}
+
+@media screen and (min-width: 1680px) {
+	body {
+		font-size: 137.5%;
+	}
+}
